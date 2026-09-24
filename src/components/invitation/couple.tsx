@@ -51,7 +51,9 @@ function Portrait({
         />
       </motion.div>
       <h3 className="mt-6 font-display text-3xl text-foreground">{name}</h3>
-      <p className="mt-1 text-xs uppercase tracking-[0.24em] text-gold">{fullName}</p>
+      {fullName && fullName !== name && (
+        <p className="mt-1 text-xs uppercase tracking-[0.24em] text-gold">{fullName}</p>
+      )}
       <p className="mt-3 text-sm text-muted-foreground">{line}</p>
       <p className="mx-auto mt-3 max-w-xs text-sm leading-relaxed text-foreground/70">{blurb}</p>
     </Reveal>
@@ -87,7 +89,7 @@ export function Couple() {
         </Reveal>
 
         <div className="mt-10 space-y-14">
-          <Portrait {...wedding.bride} delay={0.05} from={-40} />
+          <Portrait {...wedding.groom} delay={0.05} from={-40} />
           <motion.div
             className="text-center font-display text-4xl italic text-gold"
             initial={reduce ? false : { scale: 0.6, opacity: 0 }}
@@ -97,7 +99,7 @@ export function Couple() {
           >
             &amp;
           </motion.div>
-          <Portrait {...wedding.groom} delay={0.15} from={40} />
+          <Portrait {...wedding.bride} delay={0.15} from={40} />
         </div>
       </div>
       <div className="absolute inset-x-0 bottom-0">

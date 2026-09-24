@@ -8,7 +8,7 @@ export function getGoogleCalendarUrl(type: "wedding" | "reception" = "wedding") 
   const ev = wedding.events.find((e) => e.id === type) ?? wedding.events[0];
   const start = toICSDate(ev.dateISO);
   const end = toICSDate(ev.endISO);
-  const title = `${wedding.bride.name} & ${wedding.groom.name} — ${ev.title}`;
+  const title = `${wedding.groom.name} & ${wedding.bride.name} — ${ev.title}`;
   const details = `${wedding.parentsInvite.message}.\n\nWith love & blessings, Baji Sheik & Jareena Sheik invite you to celebrate the marriage of their only son ${wedding.groom.fullName} with ${wedding.bride.fullName}.\n\nEvent: ${ev.title}\nDate: ${ev.dateLabel}\nTime: ${ev.timeLabel}\nVenue: ${ev.venueName}\nDirections: ${ev.mapsUrl}`;
   const location = `${ev.venueName}`;
 
@@ -41,7 +41,7 @@ export function downloadInvite(type: "wedding" | "reception" = "wedding") {
     `DTSTAMP:${toICSDate(new Date().toISOString())}`,
     `DTSTART:${toICSDate(ev.dateISO)}`,
     `DTEND:${toICSDate(ev.endISO)}`,
-    `SUMMARY:${wedding.bride.name} & ${wedding.groom.name} — ${ev.title}`,
+    `SUMMARY:${wedding.groom.name} & ${wedding.bride.name} — ${ev.title}`,
     `LOCATION:${ev.venueName}`,
     `DESCRIPTION:${wedding.parentsInvite.message}. With love and joy, celebrate the wedding of ${wedding.groom.fullName} and ${wedding.bride.fullName}.`,
     "END:VEVENT",

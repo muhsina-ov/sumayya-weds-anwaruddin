@@ -36,7 +36,7 @@ export function Hero({ start = true }: { start?: boolean }) {
       {/* Background illustration */}
       <motion.img
         src={wedding.heroArt}
-        alt={`Wedding of ${wedding.bride.fullName} and ${wedding.groom.fullName}`}
+        alt={`Wedding of ${wedding.groom.fullName} and ${wedding.bride.fullName}`}
         width={1024}
         height={1536}
         style={{
@@ -77,7 +77,7 @@ export function Hero({ start = true }: { start?: boolean }) {
         </motion.div>
 
         <motion.h1 {...rise(0.3)} className="mt-4 font-display text-foreground">
-          <span className="block text-5xl leading-tight">{wedding.bride.name}</span>
+          <span className="block text-5xl leading-tight">{wedding.groom.name}</span>
           <motion.span
             className="my-1 block text-3xl italic text-gold"
             animate={reduce || !start ? {} : { scale: [1, 1.12, 1] }}
@@ -85,7 +85,7 @@ export function Hero({ start = true }: { start?: boolean }) {
           >
             &amp;
           </motion.span>
-          <span className="block text-5xl leading-tight">{wedding.groom.name}</span>
+          <span className="block text-5xl leading-tight">{wedding.bride.name}</span>
         </motion.h1>
 
         <motion.div {...rise(0.45)}>

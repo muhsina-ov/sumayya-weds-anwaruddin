@@ -35,8 +35,8 @@ export function Footer() {
 
         <Reveal delay={0.12}>
           <h2 className="mt-10 font-display text-5xl text-gilded">
-            {wedding.bride.name} <span className="italic text-gold">&amp;</span>{" "}
-            {wedding.groom.name}
+            {wedding.groom.name} <span className="italic text-gold">&amp;</span>{" "}
+            {wedding.bride.name}
           </h2>
           <p className="mt-3 text-[0.7rem] uppercase tracking-[0.35em] text-muted-foreground">
             1 &amp; 3 October 2026

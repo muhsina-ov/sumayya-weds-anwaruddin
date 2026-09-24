@@ -215,8 +215,8 @@ export function EnvelopeIntro({ open, onOpen }: { open: boolean; onOpen: () => v
                   {wedding.parentsInvite.message}
                 </p>
                 <h2 className="font-display text-3xl sm:text-5xl font-bold tracking-wide text-white drop-shadow-[0_3px_16px_rgba(0,0,0,0.95)]">
-                  {wedding.bride.name} <span className="italic text-gold">&amp;</span>{" "}
-                  {wedding.groom.name}
+                  {wedding.groom.name} <span className="italic text-gold">&amp;</span>{" "}
+                  {wedding.bride.name}
                 </h2>
                 <p className="mt-1 text-xs sm:text-sm font-medium uppercase tracking-[0.38em] text-white/90 drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]">
                   {wedding.dateLabel}

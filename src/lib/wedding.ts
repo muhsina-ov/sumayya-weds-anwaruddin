@@ -10,19 +10,19 @@ export const wedding = {
     subtext:
       "With hearts full of gratitude and joy, we request the honour of your presence and warm blessings as our beloved only son begins his journey of marriage.",
   },
-  bride: {
-    name: "Summaya",
-    fullName: "Summaya Ashraf",
-    line: "Daughter of Mr. & Mrs. Ashraf",
-    blurb: "A radiant soul stepping gracefully into a lifetime of cherished love, faith and companionship.",
-    photo: "/wedding/ring-ceremony-2.jpg",
-  },
   groom: {
     name: "Anwaruddin",
     fullName: "Anwaruddin Sheik",
     line: "Beloved Only Son of Mr. Baji Sheik & Mrs. Jareena Sheik",
     blurb: "Baji and Jareena inviting you for our only son's wedding.",
     photo: "/wedding/ring-ceremony-1.jpg",
+  },
+  bride: {
+    name: "Summaya",
+    fullName: "Summaya",
+    line: "Daughter of Mr. Mastan & Mrs. Noorjahan",
+    blurb: "A radiant soul stepping gracefully into a lifetime of cherished love, faith and companionship.",
+    photo: "/wedding/ring-ceremony-2.jpg",
   },
   heroArt: "/wedding/hero.jpg",
   introCover: "/wedding/ChatGPT Image Aug 12, 2026 at 11_08_45 PM.png",
@@ -55,11 +55,11 @@ export const wedding = {
     {
       id: "reception",
       title: "Wedding Reception & Valima",
-      subtitle: "Celebration Dinner & Felicitations",
+      subtitle: "Celebration Lunch & Felicitations",
       dateLabel: "Saturday, 3 October 2026",
-      timeLabel: "Evening 7:00 PM onwards",
-      dateISO: "2026-10-03T19:00:00+05:30",
-      endISO: "2026-10-03T23:00:00+05:30",
+      timeLabel: "12:30 PM onwards",
+      dateISO: "2026-10-03T12:30:00+05:30",
+      endISO: "2026-10-03T16:30:00+05:30",
       venueName: "Kunaparaju Appalaraju Sitamma Lions Auditorium",
       address: "Reception & Valima Venue",
       mapsUrl: "https://share.google/MxLHfEIza3vKCPShy",
@@ -68,14 +68,14 @@ export const wedding = {
   ],
   meta: {
     siteUrl: "https://anwaruddin-weds-summaya.invitingyou.top",
-    title: "Summaya & Anwaruddin — Wedding Invitation",
+    title: "Anwaruddin & Summaya — Wedding Invitation",
     description:
-      "Celebrate the wedding of Summaya Ashraf & Anwaruddin Sheik on 1 & 3 Oct 2026 at Sri Siri Convention & Lions Auditorium. Hosted by Baji & Jareena Sheik.",
-    ogTitle: "Summaya & Anwaruddin — Wedding Invitation",
+      "Celebrate the wedding of Anwaruddin Sheik & Summaya on 1 & 3 Oct 2026 at Sri Siri Convention & Lions Auditorium. Hosted by Baji & Jareena Sheik.",
+    ogTitle: "Anwaruddin & Summaya — Wedding Invitation",
     ogDescription:
       "Join Baji & Jareena Sheik in celebrating the wedding of their only son Anwaruddin with Summaya on 1 & 3 Oct 2026.",
     ogImage: "https://anwaruddin-weds-summaya.invitingyou.top/og-image.jpg",
-    ogImageAlt: "Summaya & Anwaruddin Wedding Invitation",
+    ogImageAlt: "Anwaruddin & Summaya Wedding Invitation",
     ogImageType: "image/jpeg",
     ogImageWidth: "1200",
     ogImageHeight: "630",
@@ -88,5 +88,5 @@ export const wedding = {
     "/wedding/rings-bw.png",
   ],
   closing:
-    "Your presence and heartfelt duas are the most precious blessings for our only son and beloved daughter-in-law. Come, share this blessed celebration with the Sheik & Ashraf families, insha'Allah.",
+    "Your presence and heartfelt duas are the most precious blessings for our only son and beloved daughter-in-law. Come, share this blessed celebration with the Sheik & Mastan families, insha'Allah.",
 } as const;
