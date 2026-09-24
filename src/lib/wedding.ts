@@ -67,16 +67,18 @@ export const wedding = {
     },
   ],
   meta: {
-    siteUrl: "https://sumayya-weds-anwaruddin.vercel.app",
+    siteUrl: "https://sumayya-weds-anwaruddin.pages.dev",
     title: "Summaya & Anwaruddin — Wedding Invitation | 1 & 3 Oct 2026",
     description:
       "Baji Sheik & Jareena Sheik cordially invite you to celebrate the wedding of their only son Anwaruddin Sheik with Summaya Ashraf on 1 October 2026 at Sri Siri Convention and Reception on 3 October 2026 at Kunaparaju Appalaraju Sitamma Lions Auditorium.",
     ogTitle: "Summaya & Anwaruddin — Wedding Invitation",
     ogDescription:
-      "Baji Sheik & Jareena Sheik invite you to celebrate the wedding of their only son Anwaruddin Sheik with Summaya Ashraf.",
-    ogImage: "/wedding/rings-holding.png",
+      "Baji Sheik & Jareena Sheik cordially invite you to celebrate the wedding of their only son Anwaruddin Sheik with Summaya Ashraf on 1 & 3 October 2026.",
+    ogImage: "https://sumayya-weds-anwaruddin.pages.dev/og-image.jpg",
     ogImageAlt: "Summaya & Anwaruddin Wedding Invitation",
-    ogImageType: "image/png",
+    ogImageType: "image/jpeg",
+    ogImageWidth: "1200",
+    ogImageHeight: "630",
     ogSiteName: "InviteStory",
   },
   gallery: [
